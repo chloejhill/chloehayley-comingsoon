@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chloe & Hayley - Coming soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #edecea;
+  color: #534a4b;
+  font-size: 18px;
+}
+
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  margin: -0.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+img {
+  height: 300px;
+  display: none;
+}
+
+a {
+  padding: 1rem;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.left {order:2; flex-basis:100%; height: 50px; text-align: center;}
+.middle {order:1; flex-basis:100%; text-align: center;}
+.right {order:3; flex-basis:100%; height: 50px; text-align: right; text-align: center;}
+
+.handwriting { font-family: 'Pacifico', cursive; font-size: 1.5rem; }
+
+@media screen and (min-width:700px) {
+  .container {
+    flex-wrap:nowrap;
+  }
+
+  .left {
+    flex-basis:500px;
+    order:1;
+    text-align: left;
+  }
+  .middle {
+    flex-basis:1;
+    order:2;
+  }
+  .right {
+    flex-basis:500px;
+    order:3;
+    text-align: right;
+  }
+
+  img {
+    display: inline;
+  }
+}
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="hayley.png" alt="">
+        <a class="handwriting" href="https://www.linkedin.com/in/hayley-bagnall-8ab8a56b/" target="_blank">Heyley</a>
+      </div>
+      <div class="middle">
+        <h1>We are cooking up a communications storm</h1>
+        <p>
+        Take:<br>
+        one strategic design wizard<br>
+        one sustainability mastermind<br>
+        one pint of creative strategy<br>
+        a dollop of kick-ass content<br>
+        a sprinkle of magic innovation<br>
+        a pinch of Dutch courage...<br><br>
+        ...and watch your impact transform.<br><br>
+        Be patient, we're coming soon.
+        <br><br>
+        <small>But in the meantime...<br>
+          Click on our names to find out more<br>
+          and drop us a line if you're ready to start reimaging with us
+        </small>
+      </div>
+      <div class="right handwriting">
+        <a class="handwriting" href="https://www.linkedin.com/in/chloejhill/" target="_blank">Heyley</a>
+        <img src="chloe.png" alt="">
+      </div>
+    </div>
+  </body>
+</html>
+
+
